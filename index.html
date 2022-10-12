@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="./checkmark.svg">
+    <title> TODO App - SCRUM Week 1</title>
+</head>
+<div>
+    <div class="container">
+        <h1 class="app-title"><img src="./checkmark.svg" alt="checkmark" /> TODOs</h1>
+        <ul class="todo-list js-todo-list"></ul>
+
+        <div class="empty-state">
+            <svg class="checklist-icon"><use href="#checklist-icon"></use></svg>
+            <h2 class="empty-state__title">Let's Add Some TODO's</h2>
+            <p class="empty-state__description">What do you want to get done today?</p>
+        </div>
+
+        <form class="js-form">
+            <input autofocus type="text" arial-label="Enter a new TODO item" placeholder="Example: Build Web App"
+                class="js-todo-input"></form>
+    </div>
+
+    <svg>
+        <defs>
+            <symbol id="checklist-icon" viewBox="0 0 24 24"><path id="check-mark" d="M21.856,10.303C21.941,10.857,22,11.421,22,12c0,6.075-4.925,11-11,11S0,18.075,0,12S4.925,1,11,1c2.348,0,4.518,0.741,6.304,1.993L15.882,4.45C14.474,3.537,12.8,3,11,3c-4.962,0-9,4.038-9,9c0,4.963,4.038,9,9,9c4.894,0,8.879-3.928,8.989-8.795L21.856,10.303z M20.903,2.167L11.5,11.806L7.657,8.192L4.562,11.29L11.5,18L24,5.263L20.903,2.167z">
+                
+                <animateTransform attributeName="transform"
+                attributeType="XML" type="translate" dur="2s" values="0,1;0,-1;0,1" repeatCount="indefinite"/>
+                />
+
+                </path>
+            </symbol>
+
+            <symbol id="delete-icon" viewBox="0 0 24 24"><path id="close-mark" d="M24,3.752L19.577,0l-7.771,9.039L4.159,0.031L0,4.309c2.285,2.885,5.284,5.903,8.362,8.708l-8.165,9.447l1.343,1.487c1.978-1.335,5.981-4.374,10.205-7.958c4.304,3.67,8.306,6.662,10.229,8.006l1.449-1.278l-8.255-9.724C18.456,10.024,21.753,6.643,24,3.752z"></path>
+        </symbol>
+        </defs>
+    </svg>
+
+    <script src="app.js"></script>
+    </body>
+
+</html>
